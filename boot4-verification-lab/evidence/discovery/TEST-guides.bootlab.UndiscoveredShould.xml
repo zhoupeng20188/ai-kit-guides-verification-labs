@@ -1,0 +1,9 @@
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="guides.bootlab.UndiscoveredShould" time="0.016" tests="1" errors="0" skipped="0" failures="1">
+  <testcase name="explicitSelectionRevealsTheFailure" classname="guides.bootlab.UndiscoveredShould" time="0.01">
+    <failure message="DISCOVERY_SENTINEL: this intentionally failing test was explicitly selected" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: DISCOVERY_SENTINEL: this intentionally failing test was explicitly selected
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:42)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:143)
+	at guides.bootlab.UndiscoveredShould.explicitSelectionRevealsTheFailure(UndiscoveredShould.java:9)
+</failure>
+  </testcase>
+</testsuite>

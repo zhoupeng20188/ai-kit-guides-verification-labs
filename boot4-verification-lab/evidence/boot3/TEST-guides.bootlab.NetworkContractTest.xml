@@ -1,0 +1,28 @@
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="guides.bootlab.NetworkContractTest" time="0.645" tests="1" errors="0" skipped="0" failures="0">
+  <testcase name="realHttpBasicRequestsPreserveTheSecurityContract" classname="guides.bootlab.NetworkContractTest" time="0.215">
+    <system-out>2026-10-23T11:48:54.630+08:00  INFO 39465 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [guides.bootlab.NetworkContractTest]: NetworkContractTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-23T11:48:54.631+08:00  INFO 39465 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration guides.bootlab.LabApplication for test class guides.bootlab.NetworkContractTest
+2026-10-23T11:48:54.640+08:00  INFO 39465 --- [           main] guides.bootlab.NetworkContractTest       : Starting NetworkContractTest using Java 17.0.19 with PID 39465 (started by &lt;USER&gt; in &lt;LAB_ROOT&gt;)
+2026-10-23T11:48:54.640+08:00  INFO 39465 --- [           main] guides.bootlab.NetworkContractTest       : No active profile set, falling back to 1 default profile: "default"
+2026-10-23T11:48:54.742+08:00  INFO 39465 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-10-23T11:48:54.748+08:00  INFO 39465 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-23T11:48:54.748+08:00  INFO 39465 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-10-23T11:48:54.762+08:00  INFO 39465 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-23T11:48:54.762+08:00  INFO 39465 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 121 ms
+2026-10-23T11:48:54.786+08:00  INFO 39465 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-10-23T11:48:54.821+08:00  INFO 39465 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-10-23T11:48:54.821+08:00  INFO 39465 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn51: url=jdbc:h2:mem:bootlab user=SA
+2026-10-23T11:48:54.821+08:00  INFO 39465 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-10-23T11:48:54.822+08:00  INFO 39465 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:bootlab (H2 2.3)
+2026-10-23T11:48:54.823+08:00  INFO 39465 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.000s)
+2026-10-23T11:48:54.823+08:00  INFO 39465 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 1
+2026-10-23T11:48:54.823+08:00  INFO 39465 --- [           main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2026-10-23T11:48:55.058+08:00  INFO 39465 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 53617 (http) with context path '/'
+2026-10-23T11:48:55.059+08:00  INFO 39465 --- [           main] guides.bootlab.NetworkContractTest       : Started NetworkContractTest in 0.427 seconds (process running for 2.151)
+2026-10-23T11:48:55.117+08:00  INFO 39465 --- [1-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-23T11:48:55.117+08:00  INFO 39465 --- [1-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-23T11:48:55.117+08:00  INFO 39465 --- [1-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+OBSERVATION real_http: anonymous_get=401 basic_get=200 basic_post_without_csrf=403
+</system-out>
+  </testcase>
+</testsuite>

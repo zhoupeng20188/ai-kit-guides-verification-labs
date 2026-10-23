@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="guides.UndiscoveredShould" time="0.018" tests="1" errors="0" skipped="0" failures="1" flakes="0">
+  <testcase name="deliberateFailure" classname="guides.UndiscoveredShould" time="0.012">
+    <failure message="Explicit selection discovered this intentionally failing test" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Explicit selection discovered this intentionally failing test
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:42)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:143)
+	at guides.UndiscoveredShould.deliberateFailure(UndiscoveredShould.java:7)
+</failure>
+  </testcase>
+</testsuite>

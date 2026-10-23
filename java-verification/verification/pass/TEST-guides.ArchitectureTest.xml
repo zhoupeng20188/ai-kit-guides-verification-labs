@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="guides.ArchitectureTest" time="0.376" tests="2" errors="0" skipped="0" failures="0" flakes="0">
+  <testcase name="provesAnnotationGateRejectsKnownViolation" classname="guides.ArchitectureTest" time="0.301">
+    <system-err>SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+</system-err>
+  </testcase>
+  <testcase name="acceptsCleanFixture" classname="guides.ArchitectureTest" time="0.075" />
+</testsuite>

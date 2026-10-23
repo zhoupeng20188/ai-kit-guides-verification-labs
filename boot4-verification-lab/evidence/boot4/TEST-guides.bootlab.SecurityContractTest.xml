@@ -1,0 +1,49 @@
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="guides.bootlab.SecurityContractTest" time="0.074" tests="6" errors="0" skipped="0" failures="0">
+  <testcase name="authenticatedGetSucceeds" classname="guides.bootlab.SecurityContractTest" time="0.036">
+    <system-out>2026-10-23T11:48:58.791+08:00  INFO 39572 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [guides.bootlab.SecurityContractTest]: SecurityContractTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-23T11:48:58.792+08:00  INFO 39572 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration guides.bootlab.LabApplication for test class guides.bootlab.SecurityContractTest
+2026-10-23T11:48:58.803+08:00  INFO 39572 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:58.803+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:58.803+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+OBSERVATION authenticated_get=200
+</system-out>
+  </testcase>
+  <testcase name="authenticatedPostWithoutCsrfIsForbidden" classname="guides.bootlab.SecurityContractTest" time="0.003">
+    <system-out>2026-10-23T11:48:58.830+08:00  INFO 39572 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:58.830+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:58.830+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+OBSERVATION authenticated_post_without_csrf=403
+</system-out>
+  </testcase>
+  <testcase name="invalidCsrfIsForbidden" classname="guides.bootlab.SecurityContractTest" time="0.003">
+    <system-out>2026-10-23T11:48:58.833+08:00  INFO 39572 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:58.833+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:58.833+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+OBSERVATION invalid_csrf=403
+</system-out>
+  </testcase>
+  <testcase name="unsecuredHarnessAcceptsAPostTheApplicationRejects" classname="guides.bootlab.SecurityContractTest" time="0.014">
+    <system-out>2026-10-23T11:48:58.836+08:00  INFO 39572 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:58.836+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:58.836+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-10-23T11:48:58.839+08:00  INFO 39572 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:58.839+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:58.839+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+OBSERVATION unsecured_harness_post=200
+</system-out>
+  </testcase>
+  <testcase name="authenticatedPostWithCsrfSucceeds" classname="guides.bootlab.SecurityContractTest" time="0.012">
+    <system-out>2026-10-23T11:48:58.850+08:00  INFO 39572 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:58.850+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:58.850+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+OBSERVATION authenticated_post_with_csrf=200
+</system-out>
+  </testcase>
+  <testcase name="anonymousGetRequiresAuthentication" classname="guides.bootlab.SecurityContractTest" time="0.002">
+    <system-out>2026-10-23T11:48:58.862+08:00  INFO 39572 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:58.862+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:58.863+08:00  INFO 39572 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+OBSERVATION anonymous_get=401
+</system-out>
+  </testcase>
+</testsuite>

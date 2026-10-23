@@ -1,0 +1,88 @@
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="guides.bootlab.FlywayHistoryTest" time="0.417" tests="3" errors="0" skipped="0" failures="0">
+  <testcase name="repairAlignsMetadataButLeavesDifferentSchemas" classname="guides.bootlab.FlywayHistoryTest" time="0.299">
+    <system-out>11:48:57.621 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:9599e0f9-bafa-4a40-9551-793fab33fc28 (H2 2.4)
+11:48:57.627 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.637 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+11:48:57.638 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.005s)
+11:48:57.641 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+11:48:57.653 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": &lt;&lt; Empty Schema &gt;&gt;
+11:48:57.656 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - create notes"
+11:48:57.665 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - add tag"
+11:48:57.669 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.003s)
+11:48:57.679 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:9599e0f9-bafa-4a40-9551-793fab33fc28 (H2 2.4)
+11:48:57.679 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.681 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Repair of failed migration in Schema History table "PUBLIC"."flyway_schema_history" not necessary. No failed migration detected.
+11:48:57.682 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Repairing Schema History table for version 2 (Description: add tag, Type: SQL, Checksum: -866526785)  ...
+11:48:57.683 [main] INFO org.flywaydb.core.internal.command.DbRepair -- Successfully repaired schema history table "PUBLIC"."flyway_schema_history" (execution time 00:00.002s).
+11:48:57.691 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:9599e0f9-bafa-4a40-9551-793fab33fc28 (H2 2.4)
+11:48:57.691 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.695 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.001s)
+11:48:57.702 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:44cba586-82da-4d42-a216-66918512263c (H2 2.4)
+11:48:57.703 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.704 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+11:48:57.704 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.000s)
+11:48:57.704 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+11:48:57.706 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": &lt;&lt; Empty Schema &gt;&gt;
+11:48:57.707 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - create notes"
+11:48:57.710 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - add tag"
+11:48:57.712 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.001s)
+OBSERVATION repair: existing_nullable=YES fresh_nullable=NO
+</system-out>
+  </testcase>
+  <testcase name="editedAppliedMigrationFailsValidation" classname="guides.bootlab.FlywayHistoryTest" time="0.029">
+    <system-out>11:48:57.735 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:1532e46d-9f92-4b5b-8445-4a3b39d2d12b (H2 2.4)
+11:48:57.736 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.737 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+11:48:57.737 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.000s)
+11:48:57.737 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+11:48:57.739 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": &lt;&lt; Empty Schema &gt;&gt;
+11:48:57.740 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - create notes"
+11:48:57.742 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - add tag"
+11:48:57.744 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.001s)
+11:48:57.751 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:1532e46d-9f92-4b5b-8445-4a3b39d2d12b (H2 2.4)
+11:48:57.751 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+OBSERVATION edited_applied_migration=checksum_mismatch
+</system-out>
+  </testcase>
+  <testcase name="restoreOriginalAndAddV3MakesFreshAndUpgradeAgree" classname="guides.bootlab.FlywayHistoryTest" time="0.076">
+    <system-out>11:48:57.763 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:1c31e816-6eb0-47b2-9b2f-287a54ccc87b (H2 2.4)
+11:48:57.763 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.764 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+11:48:57.764 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.000s)
+11:48:57.764 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+11:48:57.766 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": &lt;&lt; Empty Schema &gt;&gt;
+11:48:57.767 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - create notes"
+11:48:57.768 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - add tag"
+11:48:57.771 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.001s)
+11:48:57.777 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:1c31e816-6eb0-47b2-9b2f-287a54ccc87b (H2 2.4)
+11:48:57.778 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.784 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:1c31e816-6eb0-47b2-9b2f-287a54ccc87b (H2 2.4)
+11:48:57.785 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.786 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.000s)
+11:48:57.791 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:1c31e816-6eb0-47b2-9b2f-287a54ccc87b (H2 2.4)
+11:48:57.791 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.793 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.000s)
+11:48:57.793 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 2
+11:48:57.794 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - require tag"
+11:48:57.795 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 1 migration to schema "PUBLIC", now at version v3 (execution time 00:00.000s)
+11:48:57.800 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:1c31e816-6eb0-47b2-9b2f-287a54ccc87b (H2 2.4)
+11:48:57.800 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.802 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.000s)
+11:48:57.807 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:d1260228-628b-4331-aeb0-c02508b7f2d5 (H2 2.4)
+11:48:57.807 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.808 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+11:48:57.808 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.000s)
+11:48:57.809 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+11:48:57.810 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": &lt;&lt; Empty Schema &gt;&gt;
+11:48:57.810 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - create notes"
+11:48:57.812 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - add tag"
+11:48:57.814 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - require tag"
+11:48:57.815 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 3 migrations to schema "PUBLIC", now at version v3 (execution time 00:00.000s)
+11:48:57.821 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:1c31e816-6eb0-47b2-9b2f-287a54ccc87b (H2 2.4)
+11:48:57.821 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+11:48:57.828 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:d1260228-628b-4331-aeb0-c02508b7f2d5 (H2 2.4)
+11:48:57.829 [main] WARN org.flywaydb.core.internal.database.base.Database -- Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+OBSERVATION forward_migration: existing_nullable=NO fresh_nullable=NO
+</system-out>
+  </testcase>
+</testsuite>

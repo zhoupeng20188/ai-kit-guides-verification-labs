@@ -1,0 +1,182 @@
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ---------------< com.aikitguides:boot4-verification-lab >---------------
+[INFO] Building boot4-verification-lab 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO]
+[INFO] --- clean:3.2.0:clean (default-clean) @ boot4-verification-lab ---
+[INFO] Deleting <LAB_ROOT>/target
+[INFO]
+[INFO] --- resources:3.3.1:resources (default-resources) @ boot4-verification-lab ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO]
+[INFO] --- compiler:3.14.0:compile (default-compile) @ boot4-verification-lab ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug release 17] to target/classes
+[INFO]
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ boot4-verification-lab ---
+[INFO] skip non existing resourceDirectory <LAB_ROOT>/src/test/resources
+[INFO]
+[INFO] --- compiler:3.14.0:testCompile (default-testCompile) @ boot4-verification-lab ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [debug release 17] to target/test-classes
+[INFO]
+[INFO] --- surefire:3.5.4:test (default-test) @ boot4-verification-lab ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO]
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running guides.bootlab.FlywayHistoryTest
+11:48:53.335 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:0113e94e-aaa0-4460-8db8-8140a4ee4e26 (H2 2.3)
+11:48:53.351 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+11:48:53.352 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.005s)
+11:48:53.354 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+11:48:53.368 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+11:48:53.371 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - create notes"
+11:48:53.380 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - add tag"
+11:48:53.387 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.003s)
+11:48:53.395 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:0113e94e-aaa0-4460-8db8-8140a4ee4e26 (H2 2.3)
+11:48:53.397 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Repair of failed migration in Schema History table "PUBLIC"."flyway_schema_history" not necessary. No failed migration detected.
+11:48:53.398 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Repairing Schema History table for version 2 (Description: add tag, Type: SQL, Checksum: -866526785)  ...
+11:48:53.399 [main] INFO org.flywaydb.core.internal.command.DbRepair -- Successfully repaired schema history table "PUBLIC"."flyway_schema_history" (execution time 00:00.002s).
+11:48:53.405 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:0113e94e-aaa0-4460-8db8-8140a4ee4e26 (H2 2.3)
+11:48:53.407 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.001s)
+11:48:53.414 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:750bd694-3e46-4f56-8680-d45c0ed49899 (H2 2.3)
+11:48:53.416 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+11:48:53.416 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.000s)
+11:48:53.416 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+11:48:53.419 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+11:48:53.419 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - create notes"
+11:48:53.422 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - add tag"
+11:48:53.424 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.001s)
+OBSERVATION repair: existing_nullable=YES fresh_nullable=NO
+11:48:53.441 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:b4c340e3-064f-4bbb-b047-91f8506ce5ea (H2 2.3)
+11:48:53.442 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+11:48:53.442 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.000s)
+11:48:53.443 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+11:48:53.445 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+11:48:53.446 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - create notes"
+11:48:53.447 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - add tag"
+11:48:53.450 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.001s)
+11:48:53.454 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:b4c340e3-064f-4bbb-b047-91f8506ce5ea (H2 2.3)
+OBSERVATION edited_applied_migration=checksum_mismatch
+11:48:53.464 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:9c156041-8f9f-4c41-8da3-5564ad242822 (H2 2.3)
+11:48:53.465 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+11:48:53.465 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.000s)
+11:48:53.466 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+11:48:53.469 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+11:48:53.470 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - create notes"
+11:48:53.471 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - add tag"
+11:48:53.473 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 2 migrations to schema "PUBLIC", now at version v2 (execution time 00:00.001s)
+11:48:53.478 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:9c156041-8f9f-4c41-8da3-5564ad242822 (H2 2.3)
+11:48:53.483 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:9c156041-8f9f-4c41-8da3-5564ad242822 (H2 2.3)
+11:48:53.485 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 2 migrations (execution time 00:00.000s)
+11:48:53.488 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:9c156041-8f9f-4c41-8da3-5564ad242822 (H2 2.3)
+11:48:53.490 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.000s)
+11:48:53.490 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 2
+11:48:53.491 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - require tag"
+11:48:53.492 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 1 migration to schema "PUBLIC", now at version v3 (execution time 00:00.000s)
+11:48:53.495 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:9c156041-8f9f-4c41-8da3-5564ad242822 (H2 2.3)
+11:48:53.497 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.000s)
+11:48:53.501 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:4215ffc7-d9a7-4008-a11a-82a27faa5cb1 (H2 2.3)
+11:48:53.502 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+11:48:53.502 [main] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 3 migrations (execution time 00:00.000s)
+11:48:53.503 [main] INFO org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory -- Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+11:48:53.504 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": << Empty Schema >>
+11:48:53.504 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "1 - create notes"
+11:48:53.506 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "2 - add tag"
+11:48:53.507 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Migrating schema "PUBLIC" to version "3 - require tag"
+11:48:53.508 [main] INFO org.flywaydb.core.internal.command.DbMigrate -- Successfully applied 3 migrations to schema "PUBLIC", now at version v3 (execution time 00:00.000s)
+11:48:53.512 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:9c156041-8f9f-4c41-8da3-5564ad242822 (H2 2.3)
+11:48:53.521 [main] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:mem:4215ffc7-d9a7-4008-a11a-82a27faa5cb1 (H2 2.3)
+OBSERVATION forward_migration: existing_nullable=NO fresh_nullable=NO
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.430 s -- in guides.bootlab.FlywayHistoryTest
+[INFO] Running guides.bootlab.DatabaseActivationTest
+11:48:53.557 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [guides.bootlab.DatabaseActivationTest]: DatabaseActivationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:48:53.596 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration guides.bootlab.LabApplication for test class guides.bootlab.DatabaseActivationTest
+2026-10-23T11:48:53.724+08:00  INFO 39465 --- [           main] guides.bootlab.DatabaseActivationTest    : Starting DatabaseActivationTest using Java 17.0.19 with PID 39465 (started by <USER> in <LAB_ROOT>)
+2026-10-23T11:48:53.724+08:00  INFO 39465 --- [           main] guides.bootlab.DatabaseActivationTest    : No active profile set, falling back to 1 default profile: "default"
+2026-10-23T11:48:54.035+08:00  INFO 39465 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-10-23T11:48:54.191+08:00  INFO 39465 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-23T11:48:54.195+08:00  INFO 39465 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn41: url=jdbc:h2:mem:bootlab user=SA
+2026-10-23T11:48:54.195+08:00  INFO 39465 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-23T11:48:54.199+08:00  INFO 39465 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:bootlab (H2 2.3)
+2026-10-23T11:48:54.200+08:00  INFO 39465 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-10-23T11:48:54.200+08:00  INFO 39465 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.000s)
+2026-10-23T11:48:54.200+08:00  INFO 39465 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-10-23T11:48:54.202+08:00  INFO 39465 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-10-23T11:48:54.203+08:00  INFO 39465 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - create lab marker"
+2026-10-23T11:48:54.204+08:00  INFO 39465 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.000s)
+2026-10-23T11:48:54.245+08:00  INFO 39465 --- [           main] guides.bootlab.DatabaseActivationTest    : Started DatabaseActivationTest in 0.605 seconds (process running for 1.337)
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+OBSERVATION startup_migrations=1
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.025 s -- in guides.bootlab.DatabaseActivationTest
+[INFO] Running guides.bootlab.SecurityContractTest
+2026-10-23T11:48:54.556+08:00  INFO 39465 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [guides.bootlab.SecurityContractTest]: SecurityContractTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-23T11:48:54.557+08:00  INFO 39465 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration guides.bootlab.LabApplication for test class guides.bootlab.SecurityContractTest
+2026-10-23T11:48:54.567+08:00  INFO 39465 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:54.567+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:54.568+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+OBSERVATION authenticated_get=200
+2026-10-23T11:48:54.594+08:00  INFO 39465 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:54.594+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:54.594+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+OBSERVATION authenticated_post_without_csrf=403
+2026-10-23T11:48:54.597+08:00  INFO 39465 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:54.597+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:54.597+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+OBSERVATION invalid_csrf=403
+2026-10-23T11:48:54.599+08:00  INFO 39465 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:54.599+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:54.600+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-10-23T11:48:54.603+08:00  INFO 39465 --- [           main] o.s.mock.web.MockServletContext          : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:54.603+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:54.603+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+OBSERVATION unsecured_harness_post=200
+2026-10-23T11:48:54.613+08:00  INFO 39465 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:54.613+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:54.613+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+OBSERVATION authenticated_post_with_csrf=200
+2026-10-23T11:48:54.627+08:00  INFO 39465 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-10-23T11:48:54.627+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-10-23T11:48:54.627+08:00  INFO 39465 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+OBSERVATION anonymous_get=401
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s -- in guides.bootlab.SecurityContractTest
+[INFO] Running guides.bootlab.NetworkContractTest
+2026-10-23T11:48:54.630+08:00  INFO 39465 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [guides.bootlab.NetworkContractTest]: NetworkContractTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-23T11:48:54.631+08:00  INFO 39465 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration guides.bootlab.LabApplication for test class guides.bootlab.NetworkContractTest
+2026-10-23T11:48:54.640+08:00  INFO 39465 --- [           main] guides.bootlab.NetworkContractTest       : Starting NetworkContractTest using Java 17.0.19 with PID 39465 (started by <USER> in <LAB_ROOT>)
+2026-10-23T11:48:54.640+08:00  INFO 39465 --- [           main] guides.bootlab.NetworkContractTest       : No active profile set, falling back to 1 default profile: "default"
+2026-10-23T11:48:54.742+08:00  INFO 39465 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 0 (http)
+2026-10-23T11:48:54.748+08:00  INFO 39465 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-23T11:48:54.748+08:00  INFO 39465 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.48]
+2026-10-23T11:48:54.762+08:00  INFO 39465 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-23T11:48:54.762+08:00  INFO 39465 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 121 ms
+2026-10-23T11:48:54.786+08:00  INFO 39465 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-10-23T11:48:54.821+08:00  INFO 39465 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-10-23T11:48:54.821+08:00  INFO 39465 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection conn51: url=jdbc:h2:mem:bootlab user=SA
+2026-10-23T11:48:54.821+08:00  INFO 39465 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-10-23T11:48:54.822+08:00  INFO 39465 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:bootlab (H2 2.3)
+2026-10-23T11:48:54.823+08:00  INFO 39465 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.000s)
+2026-10-23T11:48:54.823+08:00  INFO 39465 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 1
+2026-10-23T11:48:54.823+08:00  INFO 39465 --- [           main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2026-10-23T11:48:55.058+08:00  INFO 39465 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 53617 (http) with context path '/'
+2026-10-23T11:48:55.059+08:00  INFO 39465 --- [           main] guides.bootlab.NetworkContractTest       : Started NetworkContractTest in 0.427 seconds (process running for 2.151)
+2026-10-23T11:48:55.117+08:00  INFO 39465 --- [1-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-23T11:48:55.117+08:00  INFO 39465 --- [1-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-23T11:48:55.117+08:00  INFO 39465 --- [1-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+OBSERVATION real_http: anonymous_get=401 basic_get=200 basic_post_without_csrf=403
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.645 s -- in guides.bootlab.NetworkContractTest
+[INFO]
+[INFO] Results:
+[INFO]
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.110 s
+[INFO] Finished at: 2026-10-23T11:48:55+08:00
+[INFO] ------------------------------------------------------------------------

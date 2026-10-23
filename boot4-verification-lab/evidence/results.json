@@ -1,0 +1,85 @@
+{
+  "executed_at_utc": "2026-10-23T03:49:04.159960+00:00",
+  "os": "Darwin",
+  "architecture": "arm64",
+  "results": {
+    "boot3": {
+      "command": "mvn -B -Pboot3 clean test",
+      "exit": 0,
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "versions": {
+        "java": "17.0.19",
+        "spring-boot": "3.5.7",
+        "spring-security-core": "6.5.6",
+        "flyway-core": "11.7.2",
+        "h2": "2.3.232",
+        "junit-jupiter-api": "5.12.2"
+      }
+    },
+    "boot4": {
+      "command": "mvn -B -Pboot4 clean test",
+      "exit": 0,
+      "tests": 11,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "versions": {
+        "java": "17.0.19",
+        "spring-boot": "4.0.0",
+        "spring-security-core": "7.0.0",
+        "flyway-core": "11.14.1",
+        "h2": "2.4.240",
+        "junit-jupiter-api": "6.0.1"
+      }
+    },
+    "discovery": {
+      "command": "mvn -B -Pboot4 test -Dtest=UndiscoveredShould",
+      "exit": 1,
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "versions": {
+        "java": "17.0.19",
+        "spring-boot": "4.0.0",
+        "spring-security-core": "7.0.0",
+        "flyway-core": "11.14.1",
+        "h2": "2.4.240",
+        "junit-jupiter-api": "6.0.1"
+      }
+    },
+    "error-dispatch": {
+      "command": "mvn -B -Pboot4 test -Dtest=NetworkContractTest -Dlab.allow-error-dispatch=false -Dlogging.level.org.springframework.security=TRACE",
+      "exit": 1,
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skipped": 0,
+      "versions": {
+        "java": "17.0.19",
+        "spring-boot": "4.0.0",
+        "spring-security-core": "7.0.0",
+        "flyway-core": "11.14.1",
+        "h2": "2.4.240",
+        "junit-jupiter-api": "6.0.1"
+      }
+    }
+  },
+  "scope": "Synthetic MockMvc, loopback HTTP and H2 fixture; no AI-agent benchmark or external database.",
+  "source_sha256": {
+    "pom.xml": "ab7011ce89fabe956c0ddd272ca2e66bf2ba56f31cdddbc4a5e2a7dc2f1d9143",
+    "src/main/java/guides/bootlab/LabApplication.java": "d6fda588db1c4c0b9e18fc71429e3d7752b986c66d84232f1bd52054c0e8bb90",
+    "src/main/java/guides/bootlab/NotesController.java": "63ac98419fadadf18c43eb8fcc85b40a994f3c6dcf4506f281fcff9603ea0873",
+    "src/main/java/guides/bootlab/SecurityConfiguration.java": "098f6182d9030cb46f0af6097b2a5beac002ad020321cb185016531313018f1b",
+    "src/main/resources/application.properties": "c8c5cee65e1f68f65d65bdc4b15d0477c2fdaca7771f5eb3d75ccfbdda6205a7",
+    "src/main/resources/db/application/V1__create_lab_marker.sql": "6783fbc6050218753d03ab6a1cd147bb08b53a2e46c151879dd753f2ed913095",
+    "src/test/java/guides/bootlab/DatabaseActivationTest.java": "f1d272a2a9200792af39197646e44bf4212b6c1a091a9fba138b5d0ab8c2c30b",
+    "src/test/java/guides/bootlab/FlywayHistoryTest.java": "2a96bf7413c708a42a42710ad7bd2d7eaea22ece226a9ffb7fc461c9c6743c00",
+    "src/test/java/guides/bootlab/NetworkContractTest.java": "0ff6c20c6e8a5498958698581f5e74e17a27de9ede14e4a997673a643a431a9e",
+    "src/test/java/guides/bootlab/SecurityContractTest.java": "a4d0c3fdcf615b579bd1aa2fd566d1e193cb0e9c710e993e377913fb98beb39c",
+    "src/test/java/guides/bootlab/UndiscoveredShould.java": "2b96652a7079c25166ad98e915ff6e6d59a4340f09a882f10bf3d6a3172b2fd1"
+  }
+}

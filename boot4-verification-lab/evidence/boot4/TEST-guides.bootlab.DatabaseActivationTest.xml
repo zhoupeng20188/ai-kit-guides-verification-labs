@@ -1,0 +1,25 @@
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="guides.bootlab.DatabaseActivationTest" time="0.952" tests="1" errors="0" skipped="0" failures="0">
+  <testcase name="bootRunsTheClasspathMigrationAtStartup" classname="guides.bootlab.DatabaseActivationTest" time="0.27">
+    <system-out>11:48:57.877 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [guides.bootlab.DatabaseActivationTest]: DatabaseActivationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:48:57.910 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration guides.bootlab.LabApplication for test class guides.bootlab.DatabaseActivationTest
+2026-10-23T11:48:58.039+08:00  INFO 39572 --- [           main] guides.bootlab.DatabaseActivationTest    : Starting DatabaseActivationTest using Java 17.0.19 with PID 39572 (started by &lt;USER&gt; in &lt;LAB_ROOT&gt;)
+2026-10-23T11:48:58.040+08:00  INFO 39572 --- [           main] guides.bootlab.DatabaseActivationTest    : No active profile set, falling back to 1 default profile: "default"
+2026-10-23T11:48:58.322+08:00  INFO 39572 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-10-23T11:48:58.453+08:00  INFO 39572 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-23T11:48:58.457+08:00  INFO 39572 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn41: url=jdbc:h2:mem:bootlab user=SA
+2026-10-23T11:48:58.457+08:00  INFO 39572 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-23T11:48:58.461+08:00  INFO 39572 --- [           main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:bootlab (H2 2.4)
+2026-10-23T11:48:58.461+08:00  WARN 39572 --- [           main] o.f.c.internal.database.base.Database    : Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026-10-23T11:48:58.462+08:00  INFO 39572 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-10-23T11:48:58.462+08:00  INFO 39572 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.000s)
+2026-10-23T11:48:58.463+08:00  INFO 39572 --- [           main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-10-23T11:48:58.465+08:00  INFO 39572 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": &lt;&lt; Empty Schema &gt;&gt;
+2026-10-23T11:48:58.465+08:00  INFO 39572 --- [           main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - create lab marker"
+2026-10-23T11:48:58.466+08:00  INFO 39572 --- [           main] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "PUBLIC", now at version v1 (execution time 00:00.000s)
+2026-10-23T11:48:58.514+08:00  INFO 39572 --- [           main] guides.bootlab.DatabaseActivationTest    : Started DatabaseActivationTest in 0.56 seconds (process running for 1.322)
+2026-10-23T11:48:58.784+08:00  WARN 39572 --- [           main] o.f.c.internal.database.base.Database    : Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026-10-23T11:48:58.786+08:00  WARN 39572 --- [           main] o.f.c.internal.database.base.Database    : Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+OBSERVATION startup_migrations=1
+</system-out>
+  </testcase>
+</testsuite>
