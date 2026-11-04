@@ -1,0 +1,35 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::            (v4.2.0-RC1)
+
+2026-10-30T16:12:49.235+08:00  INFO 54223 --- [           main] c.e.migratorlab.MigratorLabApplication   : Starting MigratorLabApplication v0.0.1-SNAPSHOT using Java 17.0.19 with PID 54223 (<lab>/target/migrator-lab-0.0.1-SNAPSHOT.jar started by forever in <lab>)
+2026-10-30T16:12:49.237+08:00  INFO 54223 --- [           main] c.e.migratorlab.MigratorLabApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-30T16:12:49.284+08:00 ERROR 54223 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'spring.properties.migrator.fail' to org.springframework.boot.context.properties.migrator.PropertiesMigrationListener$Fail:
+
+    Property: spring.properties.migrator.fail
+    Value: "on-warn"
+    Origin: "spring.properties.migrator.fail" from property source "commandLineArgs"
+    Reason: failed to convert java.lang.String to org.springframework.boot.context.properties.migrator.PropertiesMigrationListener$Fail (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.context.properties.migrator.PropertiesMigrationListener.Fail.on-warn)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    NEVER
+    ON_ERROR
+    ON_WARNING
+

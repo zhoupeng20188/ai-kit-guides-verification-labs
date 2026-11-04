@@ -1,0 +1,54 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::            (v4.2.0-RC1)
+
+2026-10-30T16:12:45.532+08:00  INFO 54135 --- [           main] c.e.migratorlab.MigratorLabApplication   : Starting MigratorLabApplication v0.0.1-SNAPSHOT using Java 17.0.19 with PID 54135 (<lab>/target/migrator-lab-0.0.1-SNAPSHOT.jar started by forever in <lab>)
+2026-10-30T16:12:45.533+08:00  INFO 54135 --- [           main] c.e.migratorlab.MigratorLabApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-30T16:12:45.577+08:00 ERROR 54135 --- [           main] o.s.b.c.p.m.PropertiesMigrationListener  : 
+The use of configuration keys that are no longer supported was found in the environment:
+
+Property source 'commandLineArgs':
+	Key: spring.banner.image.width
+		Reason: Support for image banners has been removed.
+
+
+Please refer to the release notes or reference guide for potential alternatives.
+
+2026-10-30T16:12:45.583+08:00 ERROR 54135 --- [           main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Found configuration keys that need to be migrated
+	at org.springframework.util.Assert.state(Assert.java:80) ~[spring-core-7.1.0-RC1.jar!/:7.1.0-RC1]
+	at org.springframework.boot.context.properties.migrator.PropertiesMigrationListener$Fail.check(PropertiesMigrationListener.java:129) ~[spring-boot-properties-migrator-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.boot.context.properties.migrator.PropertiesMigrationListener.onApplicationPreparedEvent(PropertiesMigrationListener.java:62) ~[spring-boot-properties-migrator-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.boot.context.properties.migrator.PropertiesMigrationListener.onApplicationEvent(PropertiesMigrationListener.java:50) ~[spring-boot-properties-migrator-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.boot.context.properties.migrator.PropertiesMigrationListener.onApplicationEvent(PropertiesMigrationListener.java:37) ~[spring-boot-properties-migrator-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:180) ~[spring-context-7.1.0-RC1.jar!/:7.1.0-RC1]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:173) ~[spring-context-7.1.0-RC1.jar!/:7.1.0-RC1]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:151) ~[spring-context-7.1.0-RC1.jar!/:7.1.0-RC1]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:133) ~[spring-context-7.1.0-RC1.jar!/:7.1.0-RC1]
+	at org.springframework.boot.context.event.EventPublishingRunListener.multicastInitialEvent(EventPublishingRunListener.java:125) ~[spring-boot-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.boot.context.event.EventPublishingRunListener.contextLoaded(EventPublishingRunListener.java:87) ~[spring-boot-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$contextLoaded$0(SpringApplicationRunListeners.java:62) ~[spring-boot-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111) ~[spring-boot-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:105) ~[spring-boot-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.boot.SpringApplicationRunListeners.contextLoaded(SpringApplicationRunListeners.java:62) ~[spring-boot-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:406) ~[spring-boot-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1353) ~[spring-boot-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-4.2.0-RC1.jar!/:4.2.0-RC1]
+	at com.example.migratorlab.MigratorLabApplication.main(MigratorLabApplication.java:10) ~[!/:0.0.1-SNAPSHOT]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:94) ~[migrator-lab-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:52) ~[migrator-lab-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:28) ~[migrator-lab-0.0.1-SNAPSHOT.jar:0.0.1-SNAPSHOT]
+

@@ -2,12 +2,13 @@
 
 Runnable source projects and sanitized evidence for the engineering tutorials on [AI Kit Guides](https://aikitguides.com/).
 
-These are synthetic teaching fixtures created with AI assistance and executed for the October 2026 editorial review. They are reproducible examples, not production incident reports, private customer data, or measurements of coding-agent performance.
+These are synthetic teaching fixtures created with AI assistance and executed for the October and November 2026 editorial reviews. They are reproducible examples, not production incident reports, private customer data, or measurements of coding-agent performance.
 
 ## Projects
 
 - [`boot4-verification-lab/`](boot4-verification-lab/) compares the same security, HTTP, and Flyway contracts on Spring Boot 3.5.7 and 4.0.0. Run `python3 verify.py` after installing JDK 17+, Maven, and Python 3.
 - [`java-verification/`](java-verification/) demonstrates pricing rules, owner-scoped order access, ArchUnit checks, and test discovery. Run `./verify.sh` after installing JDK 17+ and Maven.
+- [`boot42-migrator-lab/`](boot42-migrator-lab/) exercises the Spring Boot 4.2.0-RC1 properties migrator `fail` switch across 18 startup cases: renamed and removed keys, misspelled keys, keys with no classpath consumer, `@PropertySource`, YAML and profile files. Run `bash verify.sh` after installing JDK 17+ and Maven 3.9+; a clean run reports 23 checks passed and 0 failed.
 
 Each project contains its source, pinned build configuration, run instructions, and a sanitized evidence snapshot. The evidence preserves test identities, observations, counts, and expected negative cases while removing machine-specific JUnit properties and local account paths.
 
@@ -17,4 +18,4 @@ The fixtures use only in-memory or temporary databases and synthetic test users.
 
 - [Boot migration walkthrough](https://aikitguides.com/blog/claude-code-spring-boot-4-migration-walkthrough/)
 - [Boot verification evidence](https://aikitguides.com/examples/boot4-verification-lab/)
-
+- [Spring Boot 4.2 properties migrator: four gaps that stay silent](https://aikitguides.com/blog/spring-boot-4-2-properties-migrator-silent-gaps/)

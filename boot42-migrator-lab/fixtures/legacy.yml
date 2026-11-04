@@ -1,0 +1,5 @@
+# Loaded only by case 15, through --spring.config.additional-location.
+# Same legacy key as the other sources, in YAML instead of .properties.
+spring:
+  resources:
+    add-mappings: false

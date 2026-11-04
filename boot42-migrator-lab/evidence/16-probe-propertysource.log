@@ -1,0 +1,24 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::            (v4.2.0-RC1)
+
+2026-10-30T16:12:50.557+08:00  INFO 54263 --- [           main] c.e.migratorlab.MigratorLabApplication   : Starting MigratorLabApplication v0.0.1-SNAPSHOT using Java 17.0.19 with PID 54263 (<lab>/target/migrator-lab-0.0.1-SNAPSHOT.jar started by forever in <lab>)
+2026-10-30T16:12:50.558+08:00  INFO 54263 --- [           main] c.e.migratorlab.MigratorLabApplication   : The following 1 profile is active: "psource"
+2026-10-30T16:12:50.795+08:00  INFO 54263 --- [           main] c.e.migratorlab.MigratorLabApplication   : Started MigratorLabApplication in 0.363 seconds (process running for 0.52)
+PROBE old-name   spring.resources.add-mappings      = false
+PROBE new-name   spring.web.resources.add-mappings  = null
+PROBE bound      spring.web.resources.addMappings   = true
+PROBE property sources, in order:
+PROBE   - configurationProperties
+PROBE   - commandLineArgs
+PROBE   - systemProperties
+PROBE   - systemEnvironment
+PROBE   - random
+PROBE   - applicationInfo
+PROBE   - class path resource [legacy.properties]

@@ -1,0 +1,23 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::            (v4.2.0-RC1)
+
+2026-10-30T16:12:44.481+08:00  INFO 54114 --- [           main] c.e.migratorlab.MigratorLabApplication   : Starting MigratorLabApplication v0.0.1-SNAPSHOT using Java 17.0.19 with PID 54114 (<lab>/target/migrator-lab-0.0.1-SNAPSHOT.jar started by forever in <lab>)
+2026-10-30T16:12:44.484+08:00  INFO 54114 --- [           main] c.e.migratorlab.MigratorLabApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-30T16:12:44.703+08:00  INFO 54114 --- [           main] c.e.migratorlab.MigratorLabApplication   : Started MigratorLabApplication in 0.358 seconds (process running for 0.517)
+2026-10-30T16:12:44.705+08:00 ERROR 54114 --- [           main] o.s.b.c.p.m.PropertiesMigrationListener  : 
+The use of configuration keys that are no longer supported was found in the environment:
+
+Property source 'commandLineArgs':
+	Key: spring.banner.image.width
+		Reason: Support for image banners has been removed.
+
+
+Please refer to the release notes or reference guide for potential alternatives.
+
