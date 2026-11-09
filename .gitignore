@@ -1,0 +1,6 @@
+target/
+verification-output/
+**/target/
+**/verification-output/
+.DS_Store
+*.class

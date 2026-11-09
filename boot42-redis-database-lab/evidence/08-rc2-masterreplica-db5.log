@@ -1,0 +1,5 @@
+<timestamp>  WARN 95429 --- [boot42-redis-db-probe] [           main] i.n.r.d.DnsServerAddressStreamProviders  : Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+PROBE case=08-rc2-masterreplica-db5 boot=4.2.0-RC2
+PROBE source.property.database=5 source.url=absent source.nodes=2
+PROBE factory.type=RedisStaticMasterReplicaConfiguration factory.database=5
+PROBE assert expected=5 result=PASS
