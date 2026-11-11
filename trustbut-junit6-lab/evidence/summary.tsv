@@ -1,0 +1,11 @@
+case	mvn_exit	mvn_tests	verdict	exit	expected	match
+01-control-red	1	2	FAIL	1	FAIL	yes
+02-proved	0	2	PASS	0	PASS	yes
+03-should	0	2	PASS	0	PASS	yes
+04-it	0	2	PASS	0	PASS	yes
+05-disabled	0	3	WARN	0	WARN	yes
+06-disabled-strict	0	3	WARN	1	WARN	yes
+07-weakened	0	3	PASS	0	PASS	yes
+08-code-only	0	2	WARN	0	WARN	yes
+09-weakened-strict	0	3	PASS	0	PASS	yes
+10-should-strict	0	2	PASS	0	PASS	yes
