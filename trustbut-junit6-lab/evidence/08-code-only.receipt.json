@@ -1,0 +1,50 @@
+{
+  "$schema": "https://raw.githubusercontent.com/isAlmogK/trustbut/main/spec/agent-receipt-v1.schema.json",
+  "specVersion": "1.2",
+  "producer": {
+    "name": "trustbut",
+    "version": "0.7.0"
+  },
+  "subject": {
+    "base": "bc21995449df72f3e1812e5121e5ab0d10233cbd",
+    "head": "cb61bef98e58436826c649a87864f2df48d611d6"
+  },
+  "verdict": "warn",
+  "tests": {
+    "passed": 1,
+    "failed": 0,
+    "errored": 0,
+    "skipped": 0,
+    "scope": "full"
+  },
+  "proofs": [],
+  "findings": [
+    {
+      "id": "change-not-proven",
+      "severity": "warn",
+      "title": "Nothing proves the change",
+      "detail": "no test added or changed"
+    }
+  ],
+  "risks": [],
+  "x-trustbut": {
+    "runner": "maven",
+    "languages": [
+      "java"
+    ],
+    "root": ".",
+    "after": {
+      "exitCode": 0,
+      "durationMs": 1369,
+      "cases": [
+        {
+          "id": "demo.PriceTest::aboveBoundaryQualifies",
+          "file": "demo.PriceTest",
+          "name": "aboveBoundaryQualifies",
+          "outcome": "pass",
+          "leaf": "aboveBoundaryQualifies"
+        }
+      ]
+    }
+  }
+}

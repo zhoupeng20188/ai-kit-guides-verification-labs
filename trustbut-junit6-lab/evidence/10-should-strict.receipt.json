@@ -1,0 +1,56 @@
+{
+  "$schema": "https://raw.githubusercontent.com/isAlmogK/trustbut/main/spec/agent-receipt-v1.schema.json",
+  "specVersion": "1.2",
+  "producer": {
+    "name": "trustbut",
+    "version": "0.7.0"
+  },
+  "subject": {
+    "base": "bc21995449df72f3e1812e5121e5ab0d10233cbd",
+    "head": "9b050564861f80a0a6d7a46a5066d7eb7fb512c5"
+  },
+  "verdict": "pass",
+  "tests": {
+    "passed": 1,
+    "failed": 0,
+    "errored": 0,
+    "skipped": 0,
+    "scope": "full"
+  },
+  "proofs": [],
+  "findings": [],
+  "risks": [],
+  "x-trustbut": {
+    "runner": "maven",
+    "languages": [
+      "java"
+    ],
+    "root": ".",
+    "after": {
+      "exitCode": 0,
+      "durationMs": 1268,
+      "cases": [
+        {
+          "id": "demo.PriceTest::aboveBoundaryQualifies",
+          "file": "demo.PriceTest",
+          "name": "aboveBoundaryQualifies",
+          "outcome": "pass",
+          "leaf": "aboveBoundaryQualifies"
+        }
+      ]
+    },
+    "before": {
+      "exitCode": 1,
+      "durationMs": 1305,
+      "cases": [
+        {
+          "id": "demo.PriceShould::boundaryIsIncluded",
+          "file": "demo.PriceShould",
+          "name": "boundaryIsIncluded",
+          "outcome": "fail",
+          "leaf": "boundaryIsIncluded"
+        }
+      ]
+    }
+  }
+}

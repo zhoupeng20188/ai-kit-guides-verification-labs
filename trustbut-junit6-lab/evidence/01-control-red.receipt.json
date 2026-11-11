@@ -1,0 +1,107 @@
+{
+  "$schema": "https://raw.githubusercontent.com/isAlmogK/trustbut/main/spec/agent-receipt-v1.schema.json",
+  "specVersion": "1.2",
+  "producer": {
+    "name": "trustbut",
+    "version": "0.7.0"
+  },
+  "subject": {
+    "base": "bc21995449df72f3e1812e5121e5ab0d10233cbd",
+    "head": "3bce70555e173f98370c89cd5b3162e79e7aa856"
+  },
+  "verdict": "fail",
+  "tests": {
+    "passed": 1,
+    "failed": 1,
+    "errored": 0,
+    "skipped": 0,
+    "scope": "full"
+  },
+  "proofs": [
+    {
+      "file": "src/test/java/demo/PriceTest.java",
+      "name": "boundaryIsIncluded",
+      "before": "fail",
+      "after": "fail",
+      "verdict": "failing"
+    },
+    {
+      "file": "src/test/java/demo/PriceTest.java",
+      "name": "aboveBoundaryQualifies",
+      "before": "pass",
+      "after": "pass",
+      "verdict": "does-not-constrain"
+    }
+  ],
+  "findings": [
+    {
+      "id": "suite-failing",
+      "severity": "fail",
+      "title": "Test suite fails at head (clean checkout)",
+      "detail": "exit code 1"
+    },
+    {
+      "id": "test-failing",
+      "severity": "fail",
+      "title": "Test fails at head",
+      "file": "src/test/java/demo/PriceTest.java",
+      "detail": "boundaryIsIncluded"
+    }
+  ],
+  "risks": [
+    {
+      "file": "src/test/java/demo/PriceTest.java",
+      "score": 2,
+      "reasons": [
+        "has findings"
+      ]
+    }
+  ],
+  "x-trustbut": {
+    "runner": "maven",
+    "languages": [
+      "java"
+    ],
+    "root": ".",
+    "after": {
+      "exitCode": 1,
+      "durationMs": 1296,
+      "cases": [
+        {
+          "id": "demo.PriceTest::boundaryIsIncluded",
+          "file": "demo.PriceTest",
+          "name": "boundaryIsIncluded",
+          "outcome": "fail",
+          "leaf": "boundaryIsIncluded"
+        },
+        {
+          "id": "demo.PriceTest::aboveBoundaryQualifies",
+          "file": "demo.PriceTest",
+          "name": "aboveBoundaryQualifies",
+          "outcome": "pass",
+          "leaf": "aboveBoundaryQualifies"
+        }
+      ]
+    },
+    "before": {
+      "exitCode": 1,
+      "durationMs": 1248,
+      "cases": [
+        {
+          "id": "demo.PriceTest::boundaryIsIncluded",
+          "file": "demo.PriceTest",
+          "name": "boundaryIsIncluded",
+          "outcome": "fail",
+          "leaf": "boundaryIsIncluded"
+        },
+        {
+          "id": "demo.PriceTest::aboveBoundaryQualifies",
+          "file": "demo.PriceTest",
+          "name": "aboveBoundaryQualifies",
+          "outcome": "pass",
+          "leaf": "aboveBoundaryQualifies"
+        }
+      ]
+    }
+  }
+}

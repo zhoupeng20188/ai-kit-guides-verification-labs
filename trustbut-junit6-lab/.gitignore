@@ -1,5 +1,4 @@
 target/
 .trustbut.json
-*.receipt.json
 work/
 .DS_Store

@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/isAlmogK/trustbut/main/spec/agent-receipt-v1.schema.json",
+  "specVersion": "1.2",
+  "producer": {
+    "name": "trustbut",
+    "version": "0.7.0"
+  },
+  "subject": {
+    "base": "bc21995449df72f3e1812e5121e5ab0d10233cbd",
+    "head": "0ab894890400a3fec10c62dc6cc67d9e8d25636f"
+  },
+  "verdict": "pass",
+  "tests": {
+    "passed": 2,
+    "failed": 0,
+    "errored": 0,
+    "skipped": 0,
+    "scope": "full"
+  },
+  "proofs": [
+    {
+      "file": "src/test/java/demo/PriceWeakenedTest.java",
+      "name": "boundaryIsIncluded",
+      "before": "pass",
+      "after": "pass",
+      "verdict": "does-not-constrain"
+    }
+  ],
+  "findings": [],
+  "risks": [],
+  "x-trustbut": {
+    "runner": "maven",
+    "languages": [
+      "java"
+    ],
+    "root": ".",
+    "after": {
+      "exitCode": 0,
+      "durationMs": 1285,
+      "cases": [
+        {
+          "id": "demo.PriceTest::aboveBoundaryQualifies",
+          "file": "demo.PriceTest",
+          "name": "aboveBoundaryQualifies",
+          "outcome": "pass",
+          "leaf": "aboveBoundaryQualifies"
+        },
+        {
+          "id": "demo.PriceWeakenedTest::boundaryIsIncluded",
+          "file": "demo.PriceWeakenedTest",
+          "name": "boundaryIsIncluded",
+          "outcome": "pass",
+          "leaf": "boundaryIsIncluded"
+        }
+      ]
+    },
+    "before": {
+      "exitCode": 0,
+      "durationMs": 1261,
+      "cases": [
+        {
+          "id": "demo.PriceWeakenedTest::boundaryIsIncluded",
+          "file": "demo.PriceWeakenedTest",
+          "name": "boundaryIsIncluded",
+          "outcome": "pass",
+          "leaf": "boundaryIsIncluded"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://raw.githubusercontent.com/isAlmogK/trustbut/main/spec/agent-receipt-v1.schema.json",
+  "specVersion": "1.2",
+  "producer": {
+    "name": "trustbut",
+    "version": "0.7.0"
+  },
+  "subject": {
+    "base": "bc21995449df72f3e1812e5121e5ab0d10233cbd",
+    "head": "e11fc132761201bce95dbec926878fa7eb72d76c"
+  },
+  "verdict": "pass",
+  "tests": {
+    "passed": 2,
+    "failed": 0,
+    "errored": 0,
+    "skipped": 0,
+    "scope": "full"
+  },
+  "proofs": [
+    {
+      "file": "src/test/java/demo/PriceTest.java",
+      "name": "boundaryIsIncluded",
+      "before": "fail",
+      "after": "pass",
+      "verdict": "proves-change"
+    },
+    {
+      "file": "src/test/java/demo/PriceTest.java",
+      "name": "aboveBoundaryQualifies",
+      "before": "pass",
+      "after": "pass",
+      "verdict": "does-not-constrain"
+    }
+  ],
+  "findings": [],
+  "risks": [],
+  "x-trustbut": {
+    "runner": "maven",
+    "languages": [
+      "java"
+    ],
+    "root": ".",
+    "after": {
+      "exitCode": 0,
+      "durationMs": 1244,
+      "cases": [
+        {
+          "id": "demo.PriceTest::boundaryIsIncluded",
+          "file": "demo.PriceTest",
+          "name": "boundaryIsIncluded",
+          "outcome": "pass",
+          "leaf": "boundaryIsIncluded"
+        },
+        {
+          "id": "demo.PriceTest::aboveBoundaryQualifies",
+          "file": "demo.PriceTest",
+          "name": "aboveBoundaryQualifies",
+          "outcome": "pass",
+          "leaf": "aboveBoundaryQualifies"
+        }
+      ]
+    },
+    "before": {
+      "exitCode": 1,
+      "durationMs": 1189,
+      "cases": [
+        {
+          "id": "demo.PriceTest::boundaryIsIncluded",
+          "file": "demo.PriceTest",
+          "name": "boundaryIsIncluded",
+          "outcome": "fail",
+          "leaf": "boundaryIsIncluded"
+        },
+        {
+          "id": "demo.PriceTest::aboveBoundaryQualifies",
+          "file": "demo.PriceTest",
+          "name": "aboveBoundaryQualifies",
+          "outcome": "pass",
+          "leaf": "aboveBoundaryQualifies"
+        }
+      ]
+    }
+  }
+}
